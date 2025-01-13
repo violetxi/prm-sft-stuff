@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python parallel_value_trainer_orm.py dataset_name=numina-v1-blocks-1620 gradient_accumulation_steps=32 test_batch_size=8 lr=3e-5 train_batch_size=2 epochs=1 wandb_project=orm_block_balanced wandb_run_name=orm_lr3e-5_ga16 test_freq=100 save_freq=2000 output_dir=/data2/ziyxiang/tools/checkpoints/ balance_dataset=True
+
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python parallel_value_trainer_orm.py dataset_name=numina-v1-blocks-2964 gradient_accumulation_steps=32 test_batch_size=8 lr=3e-5 train_batch_size=2 epochs=1 wandb_project=orm_block_balanced wandb_run_name=orm_lr3e-5_ga16 test_freq=100 save_freq=2000 output_dir=/data/ziyxiang/tools/checkpoints/ balance_dataset=True
+
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python parallel_value_trainer_orm.py dataset_name=numina-v1-blocks-3194 gradient_accumulation_steps=32 test_batch_size=8 lr=3e-5 train_batch_size=2 epochs=1 wandb_project=orm_block_balanced wandb_run_name=orm_lr3e-5_ga16 test_freq=100 save_freq=2000 output_dir=//data-tmp/ziyxiang/tools/checkpoints/ balance_dataset=True

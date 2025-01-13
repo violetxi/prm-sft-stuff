@@ -1,0 +1,32 @@
+model_name: meta-llama/Meta-Llama-3.1-8B
+model_checkpoint: RLAIF/sft-llama-3.1-8b-external
+cache_dir: null
+
+dataset_name: numina-tir
+balance_dataset: false
+
+use_flash_attn: false
+seed: 42
+
+test_freq: 100
+save_freq: 200
+num_test_batches: 10
+wandb_project: sft_tir
+wandb_entity: null
+wandb_run_name: 2e-5_b32_warmup0.1
+output_dir: /home/violet/checkpoints/
+# huggingface save info
+hf_organization: violetxi
+
+gradient_accumulation_steps: 4
+train_batch_size: 8
+test_batch_size: 8
+lr: 2e-5
+epochs: 3
+warmup_ratio: 0.1
+low_cpu_mem_usage: true
+discounted_rewards: false
+evaluate_math500_orm: false
+mixed_precision: bf16
+debug: false
+weight_decay: 0.0
